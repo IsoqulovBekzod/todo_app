@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Task;  // Task modelini import qilish
+use App\Models\Task;  
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
     public function index(): \Illuminate\Database\Eloquent\Collection
     {
-        return Task::all();  // Bu yerda Task modelidan foydalaniladi
+        return Task::all();  
     }
 
     public function store(Request $request): \Illuminate\Http\JsonResponse
